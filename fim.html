@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mata Mosquito | @wrodolfox</title>
+		<meta charset="utf-8">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="estilo.css" />
+	</head>
+	<body>
+
+		<div class="container p-4">
+			<div class="row">
+				<div class="col">
+					<div class="item">
+							<p class="display-1 d-block text-danger font-weight-bold text-center sombra">VOCÊ PERDEU!!</p>
+						</div>
+							
+						<div class="item">
+							<p class="h2 d-block text-center text-white py-5 sombra">
+								<script>
+								var nivel = window.location.search
+									nivel = nivel.replace('?', '')
+
+									if(nivel === 'facil') {
+										document.write('Nível: Fácil')
+									} else if(nivel === 'normal') {
+										document.write('Nível: Normal')
+									} else if(nivel === 'dificil') {
+										document.write('Nível: Difícil')
+									}
+								</script>
+							</p>
+						</div>				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col">
+					<div class="d-flex justify-content-center">
+						<button type="button" class="btn btn-dark btn-lg" onclick="window.location.href = 'app.html' ">Reiniciar</button>
+						<button type="button" class="btn btn-outline-light btn-lg ml-2" onclick="window.location.href = 'index.html' ">Novo Jogo</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>
